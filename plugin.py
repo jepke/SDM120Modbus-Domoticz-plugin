@@ -53,85 +53,85 @@ class BasePlugin:
         self.runInterval = int(Parameters["Mode3"]) * 1 
        
         if 1 not in Devices:
-            Domoticz.Device(Name="Voltage_L1", Unit=1,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L1 volts", Unit=1,TypeName="Voltage",Used=0).Create()
         if 2 not in Devices:
-            Domoticz.Device(Name="Voltage_L2", Unit=2,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L2 volts", Unit=2,TypeName="Voltage",Used=0).Create()
         if 3 not in Devices:
-            Domoticz.Device(Name="Voltage_L3", Unit=3,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L3 volts", Unit=3,TypeName="Voltage",Used=0).Create()
         Options = { "Custom" : "1;A"}
         if 4 not in Devices:
-            Domoticz.Device(Name="Current_L1", Unit=4,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 amps", Unit=4,TypeName="Custom",Used=0,Options=Options).Create()
         if 5 not in Devices:
-            Domoticz.Device(Name="Current_L2", Unit=5,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 amps", Unit=5,TypeName="Custom",Used=0,Options=Options).Create()
         if 6 not in Devices:
-            Domoticz.Device(Name="Current_L3", Unit=6,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 amps", Unit=6,TypeName="Custom",Used=0,Options=Options).Create()
         if 7 not in Devices:
-            Domoticz.Device(Name="Power_L1", Unit=7,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="L1 watts", Unit=7,TypeName="Usage",Used=0).Create()
         if 8 not in Devices:
-            Domoticz.Device(Name="Power_L2", Unit=8,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="L2 watts", Unit=8,TypeName="Usage",Used=0).Create()
         if 9 not in Devices:
-            Domoticz.Device(Name="Power_L3", Unit=9,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="L3 watts", Unit=9,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;VA"}
         if 10 not in Devices:
-            Domoticz.Device(Name="Apparent_Power_L1", Unit=10,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 volt-ampere", Unit=10,TypeName="Custom",Used=0,Options=Options).Create()
         if 11 not in Devices:
-            Domoticz.Device(Name="Apparent_Power_L2", Unit=11,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 volt-ampere", Unit=11,TypeName="Custom",Used=0,Options=Options).Create()
         if 12 not in Devices:
-            Domoticz.Device(Name="Apparent_Power_L3", Unit=12,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 volt-ampere", Unit=12,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;VAr"}
         if 13 not in Devices:
-            Domoticz.Device(Name="Reactive_Power_L1", Unit=13,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 volt-ampere-reactive", Unit=13,TypeName="Custom",Used=0,Options=Options).Create()
         if 14 not in Devices:
-            Domoticz.Device(Name="Reactive_Power_L2", Unit=14,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 volt-ampere-reactive", Unit=14,TypeName="Custom",Used=0,Options=Options).Create()
         if 15 not in Devices:
-            Domoticz.Device(Name="Reactive_Power_L3", Unit=15,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 volt-ampere-reactive", Unit=15,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;PF"}
         if 16 not in Devices:
-            Domoticz.Device(Name="Power_Factor_L1", Unit=16,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 power factor", Unit=16,TypeName="Custom",Used=0,Options=Options).Create()
         if 17 not in Devices:
-            Domoticz.Device(Name="Power_Factor_L2", Unit=17,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 power factor", Unit=17,TypeName="Custom",Used=0,Options=Options).Create()
         if 18 not in Devices:
-            Domoticz.Device(Name="Power_Factor_L3", Unit=18,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 power factor", Unit=18,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;°"}
         if 19 not in Devices:
-            Domoticz.Device(Name="Phase_Angle_L1", Unit=19,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 phase angle", Unit=19,TypeName="Custom",Used=0,Options=Options).Create()
         if 20 not in Devices:
-            Domoticz.Device(Name="Phase_Angle_L2", Unit=20,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 phase angle", Unit=20,TypeName="Custom",Used=0,Options=Options).Create()
         if 21 not in Devices:
-            Domoticz.Device(Name="Phase_Angle_L3", Unit=21,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 phase angle", Unit=21,TypeName="Custom",Used=0,Options=Options).Create()
         if 22 not in Devices:
-            Domoticz.Device(Name="Average_Voltage_To_Neutral", Unit=22,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="Average volts to neutral", Unit=22,TypeName="Voltage",Used=0).Create()
         Options = { "Custom" : "1;A"}
         if 23 not in Devices:
-            Domoticz.Device(Name="Average_Line_Current", Unit=23,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Average line amps", Unit=23,TypeName="Custom",Used=0,Options=Options).Create()
         if 24 not in Devices:
-            Domoticz.Device(Name="Sum_Line_Current", Unit=24,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Sum line amps", Unit=24,TypeName="Custom",Used=0,Options=Options).Create()
         if 25 not in Devices:
-            Domoticz.Device(Name="Total_System_Power", Unit=25,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Total system watts", Unit=25,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;VA"}
         if 26 not in Devices:
-            Domoticz.Device(Name="Total_System_Apparent_Power", Unit=26,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total system volt-ampere", Unit=26,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;VAr"}
         if 27 not in Devices:
-            Domoticz.Device(Name="Total_System_Reactive_Power", Unit=27,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total system volt-ampere-reactive", Unit=27,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;PF"}
         if 28 not in Devices:
-            Domoticz.Device(Name="Total_Power_Factor", Unit=28,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total power factor", Unit=28,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;°"}
         if 29 not in Devices:
-            Domoticz.Device(Name="Total_Phase_Angle", Unit=29,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total phase angle", Unit=29,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;Hz"}
         if 30 not in Devices:
             Domoticz.Device(Name="Frequency", Unit=30,TypeName="Custom",Used=0,Options=Options).Create()
         if 31 not in Devices:
-            Domoticz.Device(Name="Import_kWh/MWh", Unit=31,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="Import kWh/MWh", Unit=31,TypeName="kWh",Used=0).Create()
         if 32 not in Devices:
-            Domoticz.Device(Name="Export_kWh/MWh", Unit=32,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="Export kWh/MWh", Unit=32,TypeName="kWh",Used=0).Create()
         Options = { "Custom" : "1;kVArh"}
         if 33 not in Devices:
-            Domoticz.Device(Name="Import_kVArh/MVArh", Unit=33,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Import kVArh/MVArh", Unit=33,TypeName="Custom",Used=0,Options=Options).Create()
         if 34 not in Devices:
-            Domoticz.Device(Name="Export_kVArh/MVArh", Unit=34,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Export kVArh/MVArh", Unit=34,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;kVAh"}
         if 35 not in Devices:
             Domoticz.Device(Name="kVAh", Unit=35,TypeName="Custom",Used=0,Options=Options).Create()
@@ -139,112 +139,112 @@ class BasePlugin:
         if 36 not in Devices:
             Domoticz.Device(Name="kAh", Unit=36,TypeName="Custom",Used=0,Options=Options).Create()
         if 37 not in Devices:
-            Domoticz.Device(Name="Total_System_Power_import", Unit=37,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Total system watts import", Unit=37,TypeName="Usage",Used=0).Create()
         if 38 not in Devices:
-            Domoticz.Device(Name="Max_Total_System_Power_import", Unit=38,TypeName="Usage",Used=0).Create()
+            Domoticz.Device(Name="Max total system watts import", Unit=38,TypeName="Usage",Used=0).Create()
         Options = { "Custom" : "1;VA"}
         if 39 not in Devices:
-            Domoticz.Device(Name="Total_System_VA_import", Unit=39,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total system volt-ampere import", Unit=39,TypeName="Custom",Used=0,Options=Options).Create()
         if 40 not in Devices:
-            Domoticz.Device(Name="Max_Total_System_VA_import", Unit=40,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Max total system volt-ampere import", Unit=40,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;A"}
         if 41 not in Devices:
-            Domoticz.Device(Name="Neutral_Current_import", Unit=41,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Neutral amps import", Unit=41,TypeName="Custom",Used=0,Options=Options).Create()
         if 42 not in Devices:
-            Domoticz.Device(Name="Max_Neutral_Current_import", Unit=42,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Max neutral amps import", Unit=42,TypeName="Custom",Used=0,Options=Options).Create()
         if 43 not in Devices:
-            Domoticz.Device(Name="L1_to_L2", Unit=43,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L1 to L2 volts", Unit=43,TypeName="Voltage",Used=0).Create()
         if 44 not in Devices:
-            Domoticz.Device(Name="L2_to_L3", Unit=44,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L2 to L3 volts", Unit=44,TypeName="Voltage",Used=0).Create()
         if 45 not in Devices:
-            Domoticz.Device(Name="L3_to_L1", Unit=45,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="L3 to L1 volts", Unit=45,TypeName="Voltage",Used=0).Create()
         if 46 not in Devices:
-            Domoticz.Device(Name="Average_L_to_L", Unit=46,TypeName="Voltage",Used=0).Create()
+            Domoticz.Device(Name="Average line to line volts", Unit=46,TypeName="Voltage",Used=0).Create()
         Options = { "Custom" : "1;A"}
         if 47 not in Devices:
-            Domoticz.Device(Name="Neutral_Current", Unit=47,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Neutral amps", Unit=47,TypeName="Custom",Used=0,Options=Options).Create()
         if 48 not in Devices:
-            Domoticz.Device(Name="L1_N_THD", Unit=48,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L1 to N THD", Unit=48,TypeName="Percentage",Used=0).Create()
         if 49 not in Devices:
-            Domoticz.Device(Name="L2_N_THD", Unit=49,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L2 to N THD", Unit=49,TypeName="Percentage",Used=0).Create()
         if 50 not in Devices:
-            Domoticz.Device(Name="L3_N_THD", Unit=50,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L3 to N THD", Unit=50,TypeName="Percentage",Used=0).Create()
         if 51 not in Devices:
-            Domoticz.Device(Name="L1_Current_THD", Unit=51,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L1 amps THD", Unit=51,TypeName="Percentage",Used=0).Create()
         if 52 not in Devices:
-            Domoticz.Device(Name="L1_Current_THD", Unit=52,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L2 amps THD", Unit=52,TypeName="Percentage",Used=0).Create()
         if 53 not in Devices:
-            Domoticz.Device(Name="L1_Current_THD", Unit=53,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L3 amps THD", Unit=53,TypeName="Percentage",Used=0).Create()
         if 54 not in Devices:
-            Domoticz.Device(Name="Average_L_N_THD", Unit=54,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="Average Line to Neutral THD", Unit=54,TypeName="Percentage",Used=0).Create()
         if 55 not in Devices:
-            Domoticz.Device(Name="Average_L_Current_THD", Unit=55,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="Average Line amps THD", Unit=55,TypeName="Percentage",Used=0).Create()
         Options = { "Custom" : "1;°"}
         if 56 not in Devices:
-            Domoticz.Device(Name="Total_Power_factor_degrees", Unit=56,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total power factor angle", Unit=56,TypeName="Custom",Used=0,Options=Options).Create()
         Options = { "Custom" : "1;A"}
         if 57 not in Devices:
-            Domoticz.Device(Name="L1_Current_import", Unit=57,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 amps import", Unit=57,TypeName="Custom",Used=0,Options=Options).Create()
         if 58 not in Devices:
-            Domoticz.Device(Name="L2_Current_import", Unit=58,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 amps import", Unit=58,TypeName="Custom",Used=0,Options=Options).Create()
         if 59 not in Devices:
-            Domoticz.Device(Name="L3_Current_import", Unit=59,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 amps import", Unit=59,TypeName="Custom",Used=0,Options=Options).Create()
         if 60 not in Devices:
-            Domoticz.Device(Name="Max_L1_Current_import", Unit=60,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Max L1 amps import", Unit=60,TypeName="Custom",Used=0,Options=Options).Create()
         if 61 not in Devices:
-            Domoticz.Device(Name="Max_L2_Current_import", Unit=61,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Max L2 amps import", Unit=61,TypeName="Custom",Used=0,Options=Options).Create()
         if 62 not in Devices:
-            Domoticz.Device(Name="Max_L3_Current_import", Unit=62,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Max L3 amps import", Unit=62,TypeName="Custom",Used=0,Options=Options).Create()
         if 63 not in Devices:
-            Domoticz.Device(Name="L1_L2_THD", Unit=63,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L1 to L2 THD", Unit=63,TypeName="Percentage",Used=0).Create()
         if 64 not in Devices:
-            Domoticz.Device(Name="L2_L3_THD", Unit=64,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L2 to L3 THD", Unit=64,TypeName="Percentage",Used=0).Create()
         if 65 not in Devices:
-            Domoticz.Device(Name="L3_L1_THD", Unit=65,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="L3 to L1 THD", Unit=65,TypeName="Percentage",Used=0).Create()
         if 66 not in Devices:
-            Domoticz.Device(Name="Average_L_L_THD", Unit=66,TypeName="Percentage",Used=0).Create()
+            Domoticz.Device(Name="Average line to line THD", Unit=66,TypeName="Percentage",Used=0).Create()
         if 67 not in Devices:
-            Domoticz.Device(Name="Total_active_watts", Unit=67,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="Total active watts", Unit=67,TypeName="kWh",Used=0).Create()
         Options = { "Custom" : "1;kVArh"}
         if 68 not in Devices:
-            Domoticz.Device(Name="Total_reactive_watts", Unit=68,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="Total reactive watts", Unit=68,TypeName="Custom",Used=0,Options=Options).Create()
         if 69 not in Devices:
-            Domoticz.Device(Name="L1_Import_active", Unit=69,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L1 kWh import", Unit=69,TypeName="kWh",Used=0).Create()
         if 70 not in Devices:
-            Domoticz.Device(Name="L2_Import_active", Unit=70,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L2 kWh import", Unit=70,TypeName="kWh",Used=0).Create()
         if 71 not in Devices:
-            Domoticz.Device(Name="L3_Import_active", Unit=71,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L3 kWh import", Unit=71,TypeName="kWh",Used=0).Create()
         if 72 not in Devices:
-            Domoticz.Device(Name="L1_Export_active", Unit=72,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L1 kWh export", Unit=72,TypeName="kWh",Used=0).Create()
         if 73 not in Devices:
-            Domoticz.Device(Name="L2_Export_active", Unit=73,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L2 kWh export", Unit=73,TypeName="kWh",Used=0).Create()
         if 74 not in Devices:
-            Domoticz.Device(Name="L3_Export_active", Unit=74,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L3 kWh export", Unit=74,TypeName="kWh",Used=0).Create()
         if 75 not in Devices:
-            Domoticz.Device(Name="L1_Total_active", Unit=75,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L1 kWh total", Unit=75,TypeName="kWh",Used=0).Create()
         if 76 not in Devices:
-            Domoticz.Device(Name="L2_Total_active", Unit=76,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L2 kWh total", Unit=76,TypeName="kWh",Used=0).Create()
         if 77 not in Devices:
-            Domoticz.Device(Name="L3_Total_active", Unit=77,TypeName="kWh",Used=0).Create()
+            Domoticz.Device(Name="L3 kWh total", Unit=77,TypeName="kWh",Used=0).Create()
         Options = { "Custom" : "1;kVArh"}
         if 78 not in Devices:
-            Domoticz.Device(Name="L1_Import_reactive", Unit=78,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 kWh import reactive", Unit=78,TypeName="Custom",Used=0,Options=Options).Create()
         if 79 not in Devices:
-            Domoticz.Device(Name="L2_Import_reactive", Unit=79,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 kWh import reactive", Unit=79,TypeName="Custom",Used=0,Options=Options).Create()
         if 80 not in Devices:
-            Domoticz.Device(Name="L3_Import_reactive", Unit=80,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 kWh import reactive", Unit=80,TypeName="Custom",Used=0,Options=Options).Create()
         if 81 not in Devices:
-            Domoticz.Device(Name="L1_Export_reactive", Unit=81,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 kWh export reactive", Unit=81,TypeName="Custom",Used=0,Options=Options).Create()
         if 82 not in Devices:
-            Domoticz.Device(Name="L2_Export_reactive", Unit=82,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 kWh export reactive", Unit=82,TypeName="Custom",Used=0,Options=Options).Create()
         if 83 not in Devices:
-            Domoticz.Device(Name="L3_Export_reactive", Unit=83,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 kWh export reactive", Unit=83,TypeName="Custom",Used=0,Options=Options).Create()
         if 84 not in Devices:
-            Domoticz.Device(Name="L1_Total_reactive", Unit=84,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L1 kWh total reactive", Unit=84,TypeName="Custom",Used=0,Options=Options).Create()
         if 85 not in Devices:
-            Domoticz.Device(Name="L2_Total_reactive", Unit=85,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L2 kWh total reactive", Unit=85,TypeName="Custom",Used=0,Options=Options).Create()
         if 86 not in Devices:
-            Domoticz.Device(Name="L3_Total_reactive", Unit=86,TypeName="Custom",Used=0,Options=Options).Create()
+            Domoticz.Device(Name="L3 kWh total reactive", Unit=86,TypeName="Custom",Used=0,Options=Options).Create()
 
                
     def onStop(self):
